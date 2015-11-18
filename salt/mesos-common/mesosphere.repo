@@ -1,0 +1,41 @@
+[mesosphere]
+name=Mesosphere Packages for EL 7 - $basearch
+baseurl=http://repos.mesosphere.com/el/7/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mesosphere
+
+[mesosphere-noarch]
+name=Mesosphere Packages for EL 7 - noarch
+baseurl=http://repos.mesosphere.com/el/7/noarch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mesosphere
+
+[mesosphere-source]
+name=Mesosphere Packages for EL 7 - $basearch - Source
+baseurl=http://repos.mesosphere.com/el/7/SRPMS/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mesosphere
+
+[mesosphere-testing]
+name=Mesosphere Testing Packages for EL 7 - $basearch
+baseurl=http://repos.mesosphere.com/el-testing/7/$basearch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mesosphere
+
+[mesosphere-testing-noarch]
+name=Mesosphere Testing Packages for EL 7 - noarch
+baseurl=http://repos.mesosphere.com/el-testing/7/noarch/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mesosphere
+
+[mesosphere-testing-source]
+name=Mesosphere Testing Packages for EL 7 - $basearch - Source
+baseurl=http://repos.mesosphere.com/el-testing/7/SRPMS/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mesosphere
