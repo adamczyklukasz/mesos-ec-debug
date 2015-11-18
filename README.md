@@ -14,8 +14,6 @@ http://192.168.255.10:8080
 
 ## Steps to reproduce problem
 
-* Add task
-
 ```
 curl -X POST -H "Content-Type: application/json" http://192.168.255.10:8080/v2/apps -d '
 {
@@ -26,18 +24,14 @@ curl -X POST -H "Content-Type: application/json" http://192.168.255.10:8080/v2/a
     "mem": 16
 }'
 ```
-* Check Mesos-master console: http://192.168.255.10:5050 Should work fine.
 
-* Scale up to 15+ instances (per node)
+1. Add task
 
-```
-curl -X PUT -H "Content-Type: application/json" http://192.168.255.10:8080/v2/apps/sleep -d '
-{
-    "instances": "18"
-}'
-```
+2. Check Mesos-master console: http://192.168.255.10:5050 Should work fine.
 
-* See how Mesos-slave will die :(
+3. Scale up to 16+ instances (per node)
+
+4. See how Mesos-slave will die :(
 
 More details: http://www.mail-archive.com/dev@mesos.apache.org/msg33484.html
 
