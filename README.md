@@ -1,3 +1,7 @@
+# Mesos Agent/Slave with External Containerizer ignores mesos.internal.RunTaskMessage
+
+I have odd problem with Mesos Agent + External Containerizer: I'm able to schedule only 14 tasks per agent (sic!), after reaching that limit my mesos-agent ignores mesos.internal.RunTaskMessage from mesos-master.
+
 ## Provisioning
 ```
 vagrant up
