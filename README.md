@@ -40,4 +40,7 @@ curl -X PUT -H "Content-Type: application/json" http://192.168.255.10:8080/v2/ap
 * See how Mesos-slave will die :(
 
 More details: http://www.mail-archive.com/dev@mesos.apache.org/msg33484.html
+
 Simplest External Containerizer Program: https://github.com/klocekPL/mesos-ec-debug/blob/master/ecp/ecp.py
+
+Real life example: https://github.com/AVSystem/mesoslxc
